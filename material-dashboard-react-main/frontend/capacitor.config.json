@@ -1,0 +1,8 @@
+{
+  "appId": "io.ionic.materialdashboard2react",
+  "appName": "material-dashboard-2-react",
+  "bundledWebRuntime": false,
+  "npmClient": "npm",
+  "webDir": "build",
+  "cordova": {}
+}

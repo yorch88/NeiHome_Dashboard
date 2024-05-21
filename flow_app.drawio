@@ -1,0 +1,118 @@
+<mxfile host="app.diagrams.net" modified="2024-03-21T19:05:43.159Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36" etag="4qsWeh-mFgCdpEikse1Q" version="21.5.0" type="device">
+  <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
+    <mxGraphModel dx="954" dy="592" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="WIyWlLk6GJQsqaUBKTNV-0" />
+        <mxCell id="WIyWlLk6GJQsqaUBKTNV-1" parent="WIyWlLk6GJQsqaUBKTNV-0" />
+        <mxCell id="JCSmNKZlbND9ReaxO3Ol-0" value="Administrator" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="110" y="380" width="70" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="JCSmNKZlbND9ReaxO3Ol-3" value="Neighbor" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="110" y="947.5" width="70" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="JCSmNKZlbND9ReaxO3Ol-19" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="JCSmNKZlbND9ReaxO3Ol-4" target="JCSmNKZlbND9ReaxO3Ol-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="JCSmNKZlbND9ReaxO3Ol-4" value="admin can save users and their roles for web app using" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="240" y="270" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="JCSmNKZlbND9ReaxO3Ol-5" value="Information example:&lt;br&gt;- address&lt;br&gt;- home/rooms total&lt;br&gt;&amp;nbsp;- number&lt;br&gt;- phone&lt;br&gt;-&amp;nbsp;neighborhood representatives" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="410" y="30" width="146" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="JCSmNKZlbND9ReaxO3Ol-22" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="JCSmNKZlbND9ReaxO3Ol-7" target="JCSmNKZlbND9ReaxO3Ol-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="JCSmNKZlbND9ReaxO3Ol-7" value="admins may take a control of neigbors contributions" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="230" y="510" width="140" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="JCSmNKZlbND9ReaxO3Ol-8" value="Example of type of roles:&lt;br&gt;- president&lt;br&gt;- teasurer&lt;br&gt;- etc" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="410" y="250" width="146" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="JCSmNKZlbND9ReaxO3Ol-21" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="JCSmNKZlbND9ReaxO3Ol-9" target="JCSmNKZlbND9ReaxO3Ol-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="JCSmNKZlbND9ReaxO3Ol-9" value="admin can save information about divisions or departments" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="240" y="50" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="JCSmNKZlbND9ReaxO3Ol-23" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="JCSmNKZlbND9ReaxO3Ol-10" target="JCSmNKZlbND9ReaxO3Ol-15">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="JCSmNKZlbND9ReaxO3Ol-10" value="This information will be periodically monitored by admins, with each neighbor&#39;s contribution stored in a summary document." style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="410" y="505" width="146" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="JCSmNKZlbND9ReaxO3Ol-29" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="JCSmNKZlbND9ReaxO3Ol-13" target="JCSmNKZlbND9ReaxO3Ol-26">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="JCSmNKZlbND9ReaxO3Ol-13" value="admins and app users can create reports and surveys&amp;nbsp;" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="230" y="635" width="140" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="JCSmNKZlbND9ReaxO3Ol-15" value="admins can especify if contrubutions were used for a service, repair, activities, etc. This will allow to the user upload evidence like a media files." style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="590" y="505" width="146" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="JCSmNKZlbND9ReaxO3Ol-20" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="JCSmNKZlbND9ReaxO3Ol-16" target="JCSmNKZlbND9ReaxO3Ol-17">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="JCSmNKZlbND9ReaxO3Ol-16" value="Admin can save general information about suppliers" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="240" y="160" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="JCSmNKZlbND9ReaxO3Ol-17" value="Information example:&lt;br&gt;- name&lt;br&gt;- phone&lt;br&gt;- addres&lt;br&gt;-&amp;nbsp;business role" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="410" y="140" width="146" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="JCSmNKZlbND9ReaxO3Ol-27" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="JCSmNKZlbND9ReaxO3Ol-24" target="JCSmNKZlbND9ReaxO3Ol-25">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="JCSmNKZlbND9ReaxO3Ol-24" value="admins can create neighbors" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="230" y="385" width="140" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="JCSmNKZlbND9ReaxO3Ol-25" value="Users can create new neighbors with their general information, like:&lt;br&gt;- name&lt;br&gt;- home number&lt;br&gt;- phone&lt;br&gt;- email&lt;br&gt;- etc" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="410" y="370" width="160" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="JCSmNKZlbND9ReaxO3Ol-26" value="Users can create reports and custom surveys and send to the neigbors to be responded" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="410" y="630" width="146" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="JCSmNKZlbND9ReaxO3Ol-28" value="" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.annotation_2;align=left;labelPosition=right;pointerEvents=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="180" y="40" width="50" height="800" as="geometry" />
+        </mxCell>
+        <mxCell id="JCSmNKZlbND9ReaxO3Ol-32" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="JCSmNKZlbND9ReaxO3Ol-30" target="JCSmNKZlbND9ReaxO3Ol-31">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="JCSmNKZlbND9ReaxO3Ol-30" value="admins can create activities for neigbors&amp;nbsp;" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="230" y="745" width="140" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="JCSmNKZlbND9ReaxO3Ol-31" value="Admin users can create activities and send notifications to the neighbors with summaries and details about them." style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="410" y="740" width="146" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="JCSmNKZlbND9ReaxO3Ol-34" value="UI WEB" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.start_1;whiteSpace=wrap;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="102.5" y="290" width="85" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="JCSmNKZlbND9ReaxO3Ol-35" value="UI Movil" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.start_1;whiteSpace=wrap;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="102.5" y="880" width="85" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="JCSmNKZlbND9ReaxO3Ol-37" value="Neigbors can respond to custom surveys" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="240" y="895" width="140" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="JCSmNKZlbND9ReaxO3Ol-40" value="Neigbors can see general reports about contributions and custmon surveys results" style="shape=card;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="230" y="1010" width="150" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="JCSmNKZlbND9ReaxO3Ol-41" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="JCSmNKZlbND9ReaxO3Ol-40" target="JCSmNKZlbND9ReaxO3Ol-40">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="JCSmNKZlbND9ReaxO3Ol-42" value="" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.annotation_2;align=left;labelPosition=right;pointerEvents=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="180" y="880" width="50" height="260" as="geometry" />
+        </mxCell>
+        <mxCell id="JCSmNKZlbND9ReaxO3Ol-43" value="&lt;h1&gt;NeiHome&lt;/h1&gt;&lt;p&gt;NeiHome is&amp;nbsp;an application where neighbors and their representatives can keep organized track of their finances and activities for the development and security of their homes.&lt;/p&gt;" style="text;html=1;strokeColor=default;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;align=left;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="5" y="20" width="185" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="JCSmNKZlbND9ReaxO3Ol-46" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="JCSmNKZlbND9ReaxO3Ol-44" target="JCSmNKZlbND9ReaxO3Ol-45">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="JCSmNKZlbND9ReaxO3Ol-44" value="Neighbors can send evidence of their contributions" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="240" y="950" width="140" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="JCSmNKZlbND9ReaxO3Ol-45" value="If contributions are received external like in a bank or store, the neighbor can send media file evidence of their payments." style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="410" y="922.5" width="146" height="100" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
