@@ -40,6 +40,7 @@ import MDAlert from "components/MDAlert";
 import Form from "./forms/Form";
 const baseURL = "http://127.0.0.1:8000/api/subdivision/2";
 import { isMobile } from "react-device-detect";
+
 function Dashboard() {
   const { sales, tasks } = reportsLineChartData;
   // const [post, setPost] = React.useState(null);

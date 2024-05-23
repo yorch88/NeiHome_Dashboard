@@ -73,7 +73,7 @@ function Basic() {
     //   )
     axios
       .get(
-        `http://192.168.1.68:8000/api/getuser/?email=${event.target.email.value}&password=${event.target.password.value}`
+        `http://${process.env.REACT_APP_IP_SERVER_BACKEND}:${process.env.REACT_APP_PORT_BACK_END}/api/getuser/?email=${event.target.email.value}&password=${event.target.password.value}`
       )
       .then((res) => {
         console.log(res);

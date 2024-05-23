@@ -67,11 +67,14 @@ function Divisionnumber() {
     // console.log(event.target.elements.email.value);
     // console.log(event.target.email.value);
     axios
-      .get(`http://192.168.1.68:8000/api/getdbnumber/?db_number=${event.target.db_number.value}`, {
-        headers: {
-          "Content-Type": "application/json",
-        },
-      })
+      .get(
+        `http://${process.env.REACT_APP_IP_SERVER_BACKEND}:${process.env.REACT_APP_PORT_BACK_END}/api/getdbnumber/?db_number=${event.target.db_number.value}`,
+        {
+          headers: {
+            "Content-Type": "application/json",
+          },
+        }
+      )
       .then((res) => {
         if (res.data !== "") {
           // setResult(res.data[0]);
