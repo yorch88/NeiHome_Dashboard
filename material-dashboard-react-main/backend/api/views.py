@@ -1,12 +1,13 @@
 from django.shortcuts import render
 from dynamic_db_router import in_database
 import os
+from django.core import serializers
 from rest_framework import views
 from rest_framework import generics, status
 from rest_framework.response import Response
 from .models import SubDivision, Street, Neigbor, SubdividionUsers, AdminUsers, SubdivisionNumberDB
 from .helpers import find_db_in_path_subdivision
-from .serializers import SubDivisionSerializer, StreetSerializer, NeigborSerializer, SubdivisionUsersSerializer, AdminUserSerializer, SubdivisionNumerDBSerializer, GetNumberDBSerializer, GetUserSerializer
+from .serializers import SubDivisionSerializer, StreetSerializer, NeigborSerializer, SubdivisionUsersSerializer, AdminUserSerializer, SubdivisionNumerDBSerializer, GetNumberDBSerializer, GetUserSerializer, AdminUsersDBSerializers
 
 
 # SUBDIVISION INFORMATION
@@ -63,13 +64,15 @@ class SubdivisionNumberDBListCreate(generics.ListCreateAPIView):
     queryset = SubdivisionNumberDB.objects.all()
     serializer_class = SubdivisionNumerDBSerializer
 
+
+##############################SERIALLIZERS#################################
 # Create your views here.
 class GetdbNumber(views.APIView):
     
     def get(self, request):
         # kill_sessions
         results = ""
-        yourdata=""        
+        query_data= ""        
         find_db = find_db_in_path_subdivision(request, self.request.query_params.get("db_number"))
         #find_db = True
         if find_db:
@@ -77,9 +80,8 @@ class GetdbNumber(views.APIView):
             #with in_database("1100"):
                 queryset = SubDivision.objects.first()
                 if queryset:
-                    yourdata = [{"db_number": request.session["db_number"], "found": True, "subdivision_name" : queryset.subdivision_name}]
-                    #yourdata = [{"db_number": "1100", "found": True, "subdivision_name" : "test"}]
-                results = GetNumberDBSerializer(yourdata, many=True).data
+                    query_data = [{"db_number": request.session["db_number"], "found": True, "subdivision_name" : queryset.subdivision_name}]
+                results = GetNumberDBSerializer(query_data, many=True).data
         return Response(results)
 
 
@@ -89,10 +91,40 @@ class GetUser(views.APIView):
         db_number = request.session["db_number"]
         email = self.request.query_params.get("email")
         password = self.request.query_params.get("password")
-        yourdata=""
+        serialize_data = ""
         with in_database(db_number):   
                 queryset = AdminUsers.objects.filter(email=email, password=password).first()
                 if queryset:
-                    yourdata = [{"email":queryset.email, "password":queryset.password}]
-        results = GetUserSerializer(yourdata, many=True).data
+                    serialize_data = [{"email":queryset.email, "password":queryset.password}]
+        results = GetUserSerializer(serialize_data, many=True).data
         return Response(results)
+
+    
+class AdminUsersSerializer(views.APIView):
+    def get(self, request):
+        # un-comment line below to test with frontend
+        #db_number = request.session["db_number"]
+        db_number = "1100"
+        serialize_data = ""
+        with in_database(db_number):
+            queryset = AdminUsers.objects.using(db_number).values()
+            if queryset:
+                serialize_data = list(queryset)
+        results = AdminUsersDBSerializers(serialize_data, many=True).data
+        return Response(results)
+    
+    def post(self, request, *args, **kwargs):
+        name = request.data["name"]
+        role = request.data["role"]
+        email = request.data["email"]
+        password = request.data["password"]
+        id_subdivision = request.data["id_subdivision"]
+        phone_number = request.data["phone_number"]
+        # un-comment line below to test with frontend
+        # db_number = request.session["db_number"]
+        db_number = "1100"
+        find_subdivision = SubDivision.objects.using(db_number).get(id=id_subdivision)
+        create_user = AdminUsers.objects.using(db_number).create(name=name, role=role, email=email, password=password, phone_number=phone_number, id_subdivision=find_subdivision)
+        if create_user:
+            return Response([{"message":"success"}], status=status.HTTP_201_CREATED)
+

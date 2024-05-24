@@ -77,11 +77,8 @@ function Divisionnumber() {
       )
       .then((res) => {
         if (res.data !== "") {
-          // setResult(res.data[0]);
           console.log(res.data[0]);
-          // navigate(`"/`);
           window.location.href = `./sign-in?subdivision_name=${res.data[0].subdivision_name}`;
-          // return <Navigate to="./sign-in" />;
         } else {
           color = "error";
           hidden = true;

@@ -58,7 +58,7 @@ function Dashboard() {
   return (
     <DashboardLayout>
       <div>
-        <h1>View ViewSubdivision</h1>
+        <h1>View Subdivision</h1>
         {/* <h2>{post.subdivision_name}</h2> */}
         {/* <h3>{post.address}</h3> */}
       </div>

@@ -38,5 +38,18 @@ class GetNumberDBSerializer(serializers.Serializer):
 
 class GetUserSerializer(serializers.Serializer):
     email = serializers.CharField(max_length=200)
-    #password = serializers.CharField(max_length=200)
     password = serializers.CharField(max_length=100)
+
+# class AdminUsersDBSerializers(serializers.Serializer):
+#     name = serializers.CharField(max_length=250)
+#     role = serializers.CharField(max_length=100)
+#     email = serializers.EmailField()
+#     password = serializers.CharField(max_length=128)
+#     phone_number = serializers.CharField(max_length=200)
+#     # SubDivision, on_delete=models.CASCADE
+#     #id_subdivision = serializers.IntegerField()
+
+class AdminUsersDBSerializers(serializers.ModelSerializer):
+    class Meta:
+      model = AdminUsers
+      fields = ("id",'name', 'role', 'email', 'password', "phone_number", "id_subdivision_id")
